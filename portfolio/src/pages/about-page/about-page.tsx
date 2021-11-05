@@ -1,14 +1,13 @@
-import  { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
+import Layout from "../../components/layout/layout-component";
 
-
-const About:FunctionComponent = () => {
-
-    return(
-       <div>
-            hello from About
-       </div>
-    )
-}
+const About: FunctionComponent = () => {
+  return (
+    <Layout>
+      <div>hello from About</div>
+    </Layout>
+  );
+};
 
 export default About;
 
