@@ -12,11 +12,11 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
           {router.pathname !== "/about" && (
-            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
+            <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-white-800">
               <Link href="/about">About</Link>
             </p>
           )}
-          <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
+          <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-white-800">
             <Link href="/about">Contact me</Link>
           </p>
         </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center mt-6">
-          <p className="text-base leading-4 text-gray-800">
+          <p className="text-base leading-4 text-white-800">
             2021 <span className="font-semibold">Bharat Dussa</span>
           </p>
         </div>
