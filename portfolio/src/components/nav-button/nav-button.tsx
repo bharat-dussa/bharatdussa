@@ -12,7 +12,7 @@ export default function NavButton({ path, label }: Navprops) {
   return (
     <Link href={path}>
       <div
-        className={`pr-4 menu-btn-lg cursor-pointer ${
+        className={`pt-4 md:pt-0 md:pr-4 menu-btn-lg cursor-pointer ${
           `/${router.pathname.split("/")[1]}` === path
             ? "menu-btn-lg-active"
             : ""

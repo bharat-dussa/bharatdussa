@@ -1,3 +1,3 @@
-import About from "../../src/pages/about-page/about-page";
+import AboutPage from "../../src/pages/about-page/about-page";
 
-export default About;
+export default AboutPage;

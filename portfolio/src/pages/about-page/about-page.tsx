@@ -1,14 +1,10 @@
 import { FunctionComponent } from "react";
-import Layout from "../../components/layout/layout-component";
+import About from "../../components/about-component/about-component";
 
-const About: FunctionComponent = () => {
-  return (
-    <Layout>
-      <div>hello from About</div>
-    </Layout>
-  );
+const AboutPage: FunctionComponent = () => {
+  return <About />;
 };
 
-export default About;
+export default AboutPage;
 
 // todo add component

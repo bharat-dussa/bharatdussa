@@ -1,9 +1,12 @@
 // import Footer from './footer'
 // import Meta from './meta'
 // import Buttonlist from './buttonlist'
-import { Navbar } from "../navbar-component/navbar-component"
+import React from "react";
+import Footer from "../footer/footer";
+import { Navbar } from "../navbar-component/navbar-component";
+type ComponentWithChildProps = React.PropsWithChildren<{ example?: string }>;
 
-export default function Layout({ children }) {
+export default function Layout({ children }: ComponentWithChildProps) {
   return (
     <div className="mx-4 lg:mx-8">
       {/* <Meta /> */}
@@ -11,7 +14,7 @@ export default function Layout({ children }) {
       <div className="max-w-4xl mx-auto">
         <main>{children}</main>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
-  )
+  );
 }

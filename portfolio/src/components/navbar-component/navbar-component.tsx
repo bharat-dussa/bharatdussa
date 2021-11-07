@@ -29,9 +29,17 @@ export const Navbar = () => {
       {mounted && (
         <div className="container max-w-4xl mx-auto">
           <nav className=" z-10 flex items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
-            <Link href="/">Bharat Dussa </Link>
+            <Link href="/">
+              <div className="flex text-2xl cursor-pointer">
+                <span className="font-thin">Bharat</span>{" "}
+                <span className="font-bold">Dussa</span>
+              </div>
+            </Link>
 
-            <div className="flex flex-row items-center" id="nav-content">
+            <div
+              className="flex md:flex-row items-center flex-col-reverse"
+              id="nav-content"
+            >
               {navButton.map((button) => {
                 console.log("button.path", button.path);
                 return (
